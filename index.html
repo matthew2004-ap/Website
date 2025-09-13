@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200">
+    <title>Eccentrics</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body class="Body">
+    <!-- HEADER -->
+    <header>
+        <div
+            style="display: flex; align-items: center; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+            <span
+                style="display:inline-block; font-style:oblique; font-size:2.5rem; border-style:outset; background-color:rgb(110, 200, 231); border-radius:10px; box-shadow:darkgrey; cursor:pointer; padding:10px 30px;">
+                Eccentrics📢📢📢👍
+            </span>
+            <a href="/About us.docx" title="About Eccentrics">
+                <button style="font-size:large; font-weight:bolder; background:fixed; background-color:lightblue;">About
+                    Us</button>
+            </a>
+            <a target="_blank" href="/Data_Metrix.com/" title="Quick Read">
+                <button style="font-size:large; font-weight:bolder; background:fixed; background-color:lightblue;">
+                    Read</button>
+            </a>
+            <a target="_blank" href="/New folder/" title="Data analysis">
+                <button style="font-size:large; font-weight:bolder; background:fixed; background-color:lightblue;">Data
+                    analysis</button>
+            </a>
+            <a target="_blank" href="/My_Project_Images/" title="Images">
+                <button
+                    style="font-size:large; font-weight:bolder; background:fixed; background-color:lightblue;">Images</button>
+            </a>
+            <a target="_blank" href="/Happy_Mood_Always/" title="download Songs">
+                <button
+                    style="font-size:large; font-weight:bolder; background:fixed; background-color:lightblue;">Music</button>
+            </a>
+            <button onclick="document.getElementById('signin-modal').style.display='block'"
+                style="font-size:large; font-weight:bolder; background:fixed; background-color:#0074d9; color:white; border-radius:8px; padding:8px 20px; border:none; cursor:pointer;">
+                Sign In
+            </button>
+        </div>
+        <hr>
+        <hr>
+    </header>
+
+
+    <!-- SEARCH BAR -->
+    <div id="searchBarContainer"
+        style="width:100%; display:flex; justify-content:center; align-items:center; margin-top:20px; margin-bottom:20px; opacity:0; transform:translateY(-40px); transition:opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);">
+        <input type="text" id="searchBar" placeholder="Search for products..."
+            style="width:320px; padding:10px; border-radius:8px; border:1px solid #bbb; font-size:1rem; background-color:black; color:white;">
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.4); z-index:2000; justify-content:center; align-items:center;">
+        <div
+            style="background:white; padding:30px 40px; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.15); min-width:300px; position:relative; margin:auto; top:10vh;">
+            <span style="position:absolute; top:10px; right:20px; font-size:1.5rem; cursor:pointer; color:#0074d9;"
+                onclick="document.getElementById('signin-modal').style.display='none'">&times;</span>
+            <h2 style="margin-bottom:20px; color:#0074d9;">Sign In</h2>
+            <form>
+                <input type="text" placeholder="Username or Email"
+                    style="width:100%; padding:10px; margin-bottom:15px; border-radius:6px; border:1px solid #bbb; font-size:1rem;">
+                <input type="password" placeholder="Password"
+                    style="width:100%; padding:10px; margin-bottom:20px; border-radius:6px; border:1px solid #bbb; font-size:1rem;">
+                <button type="submit"
+                    style="width:100%; padding:10px; background:#0074d9; color:white; border:none; border-radius:6px; font-size:1rem; font-weight:bold; cursor:pointer;">Sign
+                    In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Welcome Section -->
+        <h2 class="Heading-Title" style="margin-bottom: 60px; text-align: center; font-weight: bolder; color: black;">
+            WELCOME TO ECCENTRICS
+        </h2>
+        <section class="Page1" style="display: inline-block; width: 100%; text-align: center;">
+            <h2
+                style="color: black; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                <span>
+                    <pre style="font-family: inherit; background: none; border: none;">
+Checkout our electronic store.
+Save 20% on everything you buy
+                    </pre>
+                </span>
+            </h2>
+            <img class="Pictures" src="/Web_Images/electronics'.jpg" alt="Varieties of gadgets">
+            <p
+                style="font-size: larger; color: rgb(239, 6, 6); border-bottom: 3px solid black; margin: 10px 0;background-color: white;">
+                Eccentrics.com is your one-stop destination for all your gadgets, clothes and accessories needs. We
+                offer a wide range of
+                products, from newly manufactured clothes and accessories to gadgets, all at competitive prices. Our
+                mission is to
+                provide quality products with exceptional service, ensuring that you have everything you need for your
+                daily life. Whether you're shopping for yourself or your family, Eccentrics is here to make your
+                shopping experience convenient and enjoyable.
+            </p>
+            <a style="color: white;" href="https://www.Walmart.com" target="_blank">Visit Walmart</a>
+            <br><br>
+            <a href="/Descriptions.html" target="_blank" style="font-size: medium; color:white;">Read Eccentrics
+                Description</a>
+        </section>
+
+        <!-- Boys & Girls Wears Section -->
+        <section style="margin: 40px 0;">
+            <h2 style="color: #2d3a4a; text-align: center;">Boys & Girls Wears</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/T shirts.jpg" alt="Boys Wear" style="width: 100%; border-radius: 10px;">
+                    <h3>Boys' Casual Set</h3>
+                    <p>Trendy and comfortable outfits for boys, perfect for school and play. Includes t-shirts, shorts,
+                        and sneakers.</p>
+                    <small>Offered by: <b>Carter's</b></small><br>
+                    <a href="https://www.carters.com/carters-kid-boy-clothes" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/girl jackets.jpg" alt="Girls Wear" style="width: 100%; border-radius: 10px;">
+                    <h3>Girls' Casual Dress</h3>
+                    <p>Colorful dresses and accessories for girls, ideal for summer outings and parties. Soft,
+                        breathable fabrics.</p>
+                    <small>Offered by: <b>OshKosh B'gosh</b></small><br>
+                    <a href="https://www.oshkosh.com/oshkosh-girl-clothes" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/boys hoodies.jpg" alt="Boys Hoodie" style="width: 100%; border-radius: 10px;">
+                    <h3>Boys' Hoodie</h3>
+                    <p>Warm and stylish hoodies for boys, perfect for chilly days and outdoor play.</p>
+                    <small>Offered by: <b>Gap Kids</b></small><br>
+                    <a href="https://www.gap.com/browse/category.do?cid=1011757" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/girl jacket.jpg" alt="Girls Jacket"
+                        style="width: 150%; border-radius: 10px; height: 100%;">
+                    <h3>Girls' Jacket</h3>
+                    <p>Trendy denim jackets for girls, great for layering and all seasons.</p>
+                    <small>Offered by: <b>Old Navy</b></small><br>
+                    <a href="https://oldnavy.gap.com/browse/category.do?cid=1035716" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/boys sneaker.jpg" alt="Boys Sneakers"
+                        style="width: 100%; border-radius: 10px;">
+                    <h3>Boys' Sneakers</h3>
+                    <p>Durable and comfortable sneakers for active boys.</p>
+                    <small>Offered by: <b>Puma</b></small><br>
+                    <a href="https://us.puma.com/us/en/kids/boys-shoes" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/sandalsfor girls.jpg" alt="Girls Sandals"
+                        style="width: 100%; border-radius: 10px;">
+                    <h3>Girls' Sandals</h3>
+                    <p>Comfortable and colorful sandals for girls, perfect for summer.</p>
+                    <small>Offered by: <b>Crocs</b></small><br>
+                    <a href="https://www.crocs.com/c/kids/girls-shoes" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/boys hoodies3.jpg" alt="Boys T-shirt"
+                        style="width: 100%; border-radius: 10px;">
+                    <h3>Boys' Graphic T-shirt</h3>
+                    <p>Fun and vibrant graphic tees for boys, made from soft cotton.</p>
+                    <small>Offered by: <b>Children's Place</b></small><br>
+                    <a href="https://www.childrensplace.com/us/c/kids-boys-tops-tees" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/leggings3.jpg" alt="Girls Leggings" style="width: 100%; border-radius: 10px;">
+                    <h3>Girls' Leggings</h3>
+                    <p>Stretchy and comfortable leggings for girls, available in many colors.</p>
+                    <small>Offered by: <b>Justice</b></small><br>
+                    <a href="https://www.shopjustice.com/girls-bottoms-leggings" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men's Wears Section -->
+        <section style="margin: 40px 0;">
+            <h2 style="color: #2d3a4a; text-align: center;">Men's Wears</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="" alt="Men's Polo" style="width: 100%; border-radius: 10px;">
+                    <h3>Men's Polo Shirt</h3>
+                    <p>Classic polo shirts for men, perfect for casual and semi-formal occasions.</p>
+                    <small>Offered by: <b>Ralph Lauren</b></small><br>
+                    <a href="https://www.ralphlauren.com/men-clothing-polos" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80"
+                        alt="Men's Jeans" style="width: 100%; border-radius: 10px;">
+                    <h3>Men's Jeans</h3>
+                    <p>Comfortable and stylish jeans for men, available in various fits and washes.</p>
+                    <small>Offered by: <b>Wrangler</b></small><br>
+                    <a href="https://www.wrangler.com/shop/men-jeans" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80"
+                        alt="Men's Hoodie" style="width: 100%; border-radius: 10px;">
+                    <h3>Men's Hoodie</h3>
+                    <p>Soft and warm hoodies for men, great for layering in colder weather.</p>
+                    <small>Offered by: <b>Champion</b></small><br>
+                    <a href="https://www.champion.com/men/hoodies-sweatshirts.html" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images//boy sneaker.jpg" alt="Men's Sneakers"
+                        style="width: 100%; border-radius: 10px;">
+                    <h3>Men's Sneakers</h3>
+                    <p>Trendy and comfortable sneakers for men, suitable for all-day wear.</p>
+                    <small>Offered by: <b>Adidas</b></small><br>
+                    <a href="https://www.adidas.com/us/men-shoes" target="_blank" style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+                        alt="Men's Shorts" style="width: 100%; border-radius: 10px;">
+                    <h3>Men's Shorts</h3>
+                    <p>Lightweight and breathable shorts for men, ideal for summer and sports.</p>
+                    <small>Offered by: <b>Nike</b></small><br>
+                    <a href="https://www.nike.com/w/mens-shorts-38fphznik1" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ladies' Wears Section -->
+        <section style="margin: 40px 0;">
+            <h2 style="color: #2d3a4a; text-align: center;">Ladies' Wears</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1469398715555-76331a6c7df2?auto=format&fit=crop&w=400&q=80"
+                        alt="Ladies Dress" style="width: 100%; border-radius: 10px;">
+                    <h3>Ladies' Summer Dress</h3>
+                    <p>Light and breezy summer dresses for women, perfect for warm weather.</p>
+                    <small>Offered by: <b>H&M</b></small><br>
+                    <a href="https://www2.hm.com/en_us/women/products/dresses.html" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80"
+                        alt="Ladies Top" style="width: 100%; border-radius: 10px;">
+                    <h3>Ladies' Tops</h3>
+                    <p>Stylish tops for women, available in various colors and designs.</p>
+                    <small>Offered by: <b>Zara</b></small><br>
+                    <a href="https://www.zara.com/us/en/woman-tops-l1335.html" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80"
+                        alt="Ladies Jeans" style="width: 100%; border-radius: 10px;">
+                    <h3>Ladies' Jeans</h3>
+                    <p>Comfortable and fashionable jeans for women, perfect for any occasion.</p>
+                    <small>Offered by: <b>Levi's</b></small><br>
+                    <a href="https://www.levi.com/US/en_US/clothing/women/jeans/c/levi_clothing_women_jeans"
+                        target="_blank" style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
+                        alt="Ladies Sandals" style="width: 100%; border-radius: 10px;">
+                    <h3>Ladies' Sandals</h3>
+                    <p>Chic and comfortable sandals for women, great for summer outings.</p>
+                    <small>Offered by: <b>Crocs</b></small><br>
+                    <a href="https://www.crocs.com/c/women/footwear/sandals" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80"
+                        alt="Ladies Jacket" style="width: 100%; border-radius: 10px;">
+                    <h3>Ladies' Denim Jacket</h3>
+                    <p>Trendy denim jackets for women, perfect for layering in any season.</p>
+                    <small>Offered by: <b>Old Navy</b></small><br>
+                    <a href="https://oldnavy.gap.com/browse/category.do?cid=1035716" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Essentials for Both Genders -->
+        <section style="margin: 40px 0;">
+            <h2 style="color: #2d3a4a; text-align: center;">Essentials for Both Genders</h2>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80"
+                        alt="Sneakers" style="width: 100%; border-radius: 10px;">
+                    <h3>Unisex Sneakers</h3>
+                    <p>Comfortable and stylish sneakers suitable for all ages and genders. Great for daily activities.
+                    </p>
+                    <small>Offered by: <b>Nike</b></small><br>
+                    <a href="https://www.nike.com/w/sneakers-3n82yzy7ok" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="/Web_Images/backpack.jpg" alt="Backpacks" style="width: 100%; border-radius: 10px;">
+                    <h3>Backpacks</h3>
+                    <p>Durable and spacious backpacks for school, work, or travel. Available in various colors and
+                        styles.</p>
+                    <small>Offered by: <b>Adidas</b></small><br>
+                    <a href="https://www.adidas.com/us/backpacks" target="_blank" style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+                        alt="Unisex Hoodie" style="width: 100%; border-radius: 10px;">
+                    <h3>Unisex Hoodie</h3>
+                    <p>Cozy and stylish hoodies for everyone, perfect for casual wear.</p>
+                    <small>Offered by: <b>Uniqlo</b></small><br>
+                    <a href="https://www.uniqlo.com/us/en/men/outerwear-and-blazers/sweatshirts-and-hoodies"
+                        target="_blank" style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=400&q=80"
+                        alt="Unisex Cap" style="width: 100%; border-radius: 10px;">
+                    <h3>Unisex Cap</h3>
+                    <p>Classic caps for all, available in different colors and designs.</p>
+                    <small>Offered by: <b>New Era</b></small><br>
+                    <a href="https://www.neweracap.com/All-Headwear/c/all-headwear" target="_blank"
+                        style="color: #0074d9;">Buy Now</a>
+                </div>
+                <div style="background: rgba(255,255,255,0.85); border-radius: 10px; padding: 20px; width: 300px;">
+                    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80"
+                        alt="Unisex Sandals" style="width: 100%; border-radius: 10px;">
+                    <h3>Unisex Sandals</h3>
+                    <p>Lightweight and comfortable sandals for everyone, ideal for summer.</p>
+                    <small>Offered by: <b>Birkenstock</b></small><br>
+                    <a href="https://www.birkenstock.com/us/unisex-sandals/" target="_blank" style="color: #0074d9;">Buy
+                        Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Next Page -->
+        <div style="text-align:center; margin: 40px 0;">
+            <a href="page2.html">
+                <button
+                    style="font-size:large; font-weight:bolder; background-color:#0074d9; color:white; border-radius:8px; padding:12px 32px; border:none; cursor:pointer;">
+                    Next Page &raquo;
+                </button>
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer style="background-color: lightblue; text-align: center; padding: 20px;">
+        <hr>
+        Designer: Matthew Adewale<br>
+        &COPY;copyrights reserved 2025<br>
+        <small><a href="mailto:feranmiadewale940@gmail.com" title="Email">Eccentrics.com</a></small>
+        <br><br>
+        <a style="color: black;" href="#">Jump To Top</a>
+    </footer>
+    <div style="text-align:center; margin: 30px 0; background-color:white;">
+        <a href="https://facebook.com/" target="_blank" title="Facebook" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(27%) sepia(98%) saturate(749%) hue-rotate(186deg) brightness(95%) contrast(90%);">
+        </a>
+        <a href="https://linkedin.com/" target="_blank" title="LinkedIn" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(34%) sepia(99%) saturate(749%) hue-rotate(180deg) brightness(90%) contrast(90%);">
+        </a>
+        <a href="https://twitter.com/" target="_blank" title="Twitter" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(51%) sepia(99%) saturate(749%) hue-rotate(176deg) brightness(90%) contrast(90%);">
+        </a>
+        <a href="https://pinterest.com/" target="_blank" title="Pinterest" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pinterest.svg" alt="Pinterest"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(19%) sepia(99%) saturate(749%) hue-rotate(340deg) brightness(90%) contrast(90%);">
+        </a>
+        <a href="https://youtube.com/" target="_blank" title="YouTube" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(19%) sepia(99%) saturate(749%) hue-rotate(340deg) brightness(90%) contrast(90%);">
+        </a>
+        <a href="https://instagram.com/" target="_blank" title="Instagram" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(41%) sepia(99%) saturate(749%) hue-rotate(320deg) brightness(90%) contrast(90%);">
+        </a>
+        <a href="https://tiktok.com/" target="_blank" title="TikTok" style="margin:0 8px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"
+                style="width:32px;height:32px;vertical-align:middle;filter:invert(0%) sepia(99%) saturate(749%) hue-rotate(180deg) brightness(90%) contrast(90%);">
+        </a>
+    </div>
+
+    <script>
+        // Animate search bar on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            var sbc = document.getElementById('searchBarContainer');
+            setTimeout(function () {
+                sbc.style.opacity = '1';
+                sbc.style.transform = 'translateY(0)';
+            }, 200);
+        });
+        // Simple client-side search for product cards
+        document.getElementById('searchBar').addEventListener('input', function () {
+            const query = this.value.toLowerCase();
+            document.querySelectorAll('main div[style*="background: rgba"]').forEach(card => {
+                const text = card.innerText.toLowerCase();
+                card.style.display = text.includes(query) ? '' : 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
