@@ -239,3 +239,80 @@ div[style*="text-align:center"] a:nth-child(6) img {
 div[style*="text-align:center"] a:nth-child(7) img {
    filter: invert(0%) sepia(99%) saturate(749%) hue-rotate(180deg) brightness(90%) contrast(90%);
 }
+
+/* Descriptions.html specific styles */
+.desc-container {
+   width: 100%;
+   max-width: 980px;
+   margin: 110px auto 80px;
+   /* leave space for fixed header */
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.desc-card {
+   background: rgba(255, 255, 255, 0.95);
+   border-radius: 12px;
+   padding: 28px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+   color: #1f2937;
+}
+
+.desc-hero {
+   text-align: center;
+   margin-bottom: 18px;
+}
+
+.desc-hero h1 {
+   font-size: 2rem;
+   margin: 6px 0;
+   color: #0b3b69;
+}
+
+.tagline {
+   color: #334155;
+   font-style: italic;
+   margin: 0;
+}
+
+.desc-card h2 {
+   color: #123556;
+   margin-top: 18px;
+   margin-bottom: 8px;
+}
+
+.desc-card p {
+   line-height: 1.6;
+   margin: 0 0 12px 0;
+}
+
+.desc-features ul {
+   padding-left: 20px;
+   margin: 0 0 12px 0;
+}
+
+.desc-features li {
+   margin-bottom: 8px;
+}
+
+.desc-contact {
+   border-top: 1px solid rgba(0, 0, 0, 0.06);
+   margin-top: 20px;
+   padding-top: 14px;
+   text-align: center;
+   color: #0b2f4a;
+}
+
+@media (max-width: 680px) {
+   .desc-card {
+      padding: 18px;
+   }
+
+   .desc-hero h1 {
+      font-size: 1.5rem;
+   }
+
+   .desc-container {
+      margin: 90px 12px 40px;
+   }
+}
