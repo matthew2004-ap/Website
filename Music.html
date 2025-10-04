@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1" />
+   <title>World Music Collection</title>
+   <link rel="stylesheet" href="Styles.css">
+   <style>
+      /* Lightweight page-specific overrides to complement Styles.css */
+      .music-hero {
+         width: 100%;
+         max-width: 1200px;
+         margin: 40px auto 12px;
+         color: #fff;
+         text-align: center;
+         padding: 28px 18px;
+         background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+         border-radius: 14px;
+         box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+         backdrop-filter: blur(6px);
+      }
+
+      .controls {
+         display: flex;
+         gap: 12px;
+         flex-wrap: wrap;
+         justify-content: center;
+         margin-top: 14px;
+      }
+
+      .chip {
+         background: rgba(255, 255, 255, 0.08);
+         color: #fff;
+         padding: 8px 14px;
+         border-radius: 999px;
+         cursor: pointer;
+         border: 1px solid rgba(255, 255, 255, 0.06);
+         transition: transform .12s ease, background .12s ease;
+         font-weight: 600;
+         font-size: 14px;
+      }
+
+      .chip:hover {
+         transform: translateY(-2px);
+      }
+
+      .chip.active {
+         background: linear-gradient(90deg, #ffd200, #f7971e);
+         color: #111;
+      }
+
+      .grid {
+         width: 100%;
+         display: flex;
+         gap: 20px;
+         flex-wrap: wrap;
+         justify-content: center;
+      }
+
+      .card {
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+         padding: 14px;
+         border-radius: 12px;
+         width: 320px;
+         box-shadow: 0 8px 30px rgba(2, 6, 23, 0.6);
+         color: #fff;
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+      }
+
+      .cover {
+         width: 100%;
+         height: 180px;
+         background-size: cover;
+         background-position: center;
+         border-radius: 10px;
+         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+         margin-bottom: 12px;
+      }
+
+      .meta {
+         display: flex;
+         width: 100%;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      .meta .title {
+         font-size: 1.05rem;
+         font-weight: 700;
+      }
+
+      .meta .artist {
+         font-size: .9rem;
+         color: #e6e6e6;
+      }
+
+      .audio-row {
+         width: 100%;
+         margin-top: 10px;
+      }
+
+      .fav {
+         background: transparent;
+         border: none;
+         color: #ffd200;
+         font-size: 1.2rem;
+         cursor: pointer;
+      }
+
+      @media (max-width:900px) {
+         .card {
+            width: 100%;
+            max-width: 520px;
+         }
+      }
+   </style>
+</head>
+
+<body class="Body">
+   <header>
+      <div
+         style="display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:10px auto;padding:12px;">
+         <a href="index.html" style="text-decoration:none;color:#0b3b69;font-weight:800;font-size:1.2rem;">My World
+            Music</a>
+         <nav aria-label="main navigation">
+            <a href="index.html" style="margin-right:12px;color:#0b3b69;">Home</a>
+            <a href="Music.html" style="font-weight:700;color:#111;">Music</a>
+            <a href="page2.html" style="margin-left:12px;color:#0b3b69;">More</a>
+         </nav>
+      </div>
+   </header>
+
+   <main>
+      <section class="music-hero">
+         <h1 style="margin:0;font-size:2rem;">World Music Collection</h1>
+         <p class="tagline">Gospel, Afrobeat, Pop, Hip-Hop, Punk, Western — discover music for every mood.</p>
+
+         <div class="controls" role="toolbar" aria-label="filters">
+            <button class="chip active" data-cat="all">All</button>
+            <button class="chip" data-cat="Gospel">Gospel</button>
+            <button class="chip" data-cat="Afrobeat">Afrobeat</button>
+            <button class="chip" data-cat="Pop">Pop</button>
+            <button class="chip" data-cat="Hip-Hop">Hip-Hop</button>
+            <button class="chip" data-cat="Punk">Punk</button>
+            <button class="chip" data-cat="Western">Western</button>
+
+            <input id="search" placeholder="Search title or artist..."
+               style="padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(0,0,0,0.25);color:#fff;font-weight:600;min-width:220px;">
+         </div>
+      </section>
+
+      <section style="width:100%;max-width:1200px;margin:20px auto;">
+         <div id="grid" class="grid" aria-live="polite">
+            <!-- cards injected here -->
+         </div>
+         <div class="NextPageBtnContainer">
+            <small style="color:#fff;">Tip: Use the filters and search to find music. Click the star to
+               favorite.</small>
+         </div>
+      </section>
+
+   </main>
+
+   <footer style="padding:40px 12px;color:#fff;">
+      <div style="max-width:1200px;margin:0 auto;text-align:center;">
+         <p style="margin:0 0 6px 0;">Made with ♥ for the world — bring your own tracks into the
+            <code>Happy_Mood_Always</code> folder.</p>
+         <small>Contact: <a href="mailto:you@example.com">you@example.com</a></small>
+      </div>
+   </footer>
+
+   <script>
+      // Load music.json and render cards
+      let tracks = [];
+      let favorites = new Set(JSON.parse(localStorage.getItem('favorites') || '[]'));
+
+      function loadTracks() {
+         fetch('music.json')
+            .then(r => r.json())
+            .then(data => { tracks = data; renderGrid(data); })
+            .catch(err => { document.getElementById('grid').innerHTML = '<p style="color:#fff">Could not load music manifest.</p>'; console.error(err); });
+      }
+
+      function renderGrid(list) {
+         const grid = document.getElementById('grid');
+         grid.innerHTML = '';
+         if (!list.length) { grid.innerHTML = '<p style="color:#fff">No tracks found.</p>'; return; }
+
+         list.forEach(t => {
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const cover = document.createElement('div');
+            cover.className = 'cover';
+            // If local cover exists use it, else gradient fallback
+            cover.style.backgroundImage = `url('${t.cover}')`;
+
+            const meta = document.createElement('div'); meta.className = 'meta';
+            const left = document.createElement('div');
+            left.innerHTML = `<div class="title">${escapeHtml(t.title)}</div><div class="artist">${escapeHtml(t.artist)} • ${t.length || ''}</div>`;
+            const right = document.createElement('div');
+            const favBtn = document.createElement('button'); favBtn.className = 'fav'; favBtn.setAttribute('aria-pressed', favorites.has(t.id)); favBtn.innerHTML = favorites.has(t.id) ? '★' : '☆';
+            favBtn.addEventListener('click', () => { toggleFav(t.id, favBtn); });
+            right.appendChild(favBtn);
+
+            meta.appendChild(left); meta.appendChild(right);
+
+            const audioRow = document.createElement('div'); audioRow.className = 'audio-row';
+            const audio = document.createElement('audio'); audio.controls = true; audio.src = t.file; audio.preload = 'none'; audio.style.width = '100%';
+            audioRow.appendChild(audio);
+
+            card.appendChild(cover);
+            card.appendChild(meta);
+            card.appendChild(audioRow);
+
+            grid.appendChild(card);
+         });
+      }
+
+      function toggleFav(id, btn) {
+         if (favorites.has(id)) { favorites.delete(id); btn.innerHTML = '☆'; btn.setAttribute('aria-pressed', 'false'); }
+         else { favorites.add(id); btn.innerHTML = '★'; btn.setAttribute('aria-pressed', 'true'); }
+         localStorage.setItem('favorites', JSON.stringify(Array.from(favorites)));
+      }
+
+      function escapeHtml(s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+      // Filters
+      document.addEventListener('click', (e) => {
+         if (e.target.classList.contains('chip')) {
+            document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+            e.target.classList.add('active');
+            const cat = e.target.dataset.cat;
+            applyFilters();
+         }
+      });
+
+      document.getElementById('search').addEventListener('input', applyFilters);
+
+      function applyFilters() {
+         const active = document.querySelector('.chip.active');
+         const cat = active ? active.dataset.cat : 'all';
+         const q = document.getElementById('search').value.trim().toLowerCase();
+
+         const filtered = tracks.filter(t => {
+            const matchCat = (cat === 'all') || (t.category && t.category.toLowerCase() === cat.toLowerCase());
+            const matchQ = !q || (t.title && t.title.toLowerCase().includes(q)) || (t.artist && t.artist.toLowerCase().includes(q));
+            return matchCat && matchQ;
+         });
+
+         renderGrid(filtered);
+      }
+
+      loadTracks();
+   </script>
+</body>
+
+</html>

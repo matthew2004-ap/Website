@@ -316,3 +316,39 @@ div[style*="text-align:center"] a:nth-child(7) img {
       margin: 90px 12px 40px;
    }
 }
+
+/* Music page specific enhancements */
+.chip {
+   box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6);
+}
+
+.grid {
+   margin: 12px 0 40px;
+}
+
+.card audio {
+   border-radius: 8px;
+   overflow: hidden;
+}
+
+.card .cover[style*="url('"] {
+   background-color: #222;
+}
+
+/* Accessibility focus states */
+.chip:focus,
+.fav:focus,
+a:focus {
+   outline: 3px solid rgba(255, 217, 102, 0.18);
+   outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+   .music-hero {
+      padding: 18px;
+   }
+
+   .controls {
+      gap: 8px;
+   }
+}

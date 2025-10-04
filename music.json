@@ -1,0 +1,56 @@
+[
+   {
+      "id": "gospel-01",
+      "title": "Awesome God",
+      "artist": "Bethel Music",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/Awesome God.mp4",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:12"
+   },
+   {
+      "id": "afro-01",
+      "title": "African Praise Medley",
+      "artist": "Gabriel Eziashi",
+      "category": "Afrobeat",
+      "file": "Happy_Mood_Always/African Praise Medley by Gabriel Eziashi.m4a",
+      "cover": "Web_Images/girl jackets.jpg",
+      "length": "5:03"
+   },
+   {
+      "id": "pop-01",
+      "title": "Alone Pt II",
+      "artist": "Alan Walker ft Ava Max",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/Alan_Walker_ft_Ava_Max_-_Alone_Pt_II.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:10"
+   },
+   {
+      "id": "hiphop-01",
+      "title": "My City",
+      "artist": "G Herbo",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/FAST X _ My City - G Herbo, 24kGoldn, Kane Brown (Official Lyric Video).mp4",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "3:45"
+   },
+   {
+      "id": "punk-01",
+      "title": "Punk Spirit",
+      "artist": "Indie Punk Band",
+      "category": "Punk",
+      "file": "Happy_Mood_Always/punk-sample.mp3",
+      "cover": "Web_Images/boy sneaker.jpg",
+      "length": "2:58"
+   },
+   {
+      "id": "western-01",
+      "title": "Circle of Life",
+      "artist": "Carmen Twillie, Lebo M.",
+      "category": "Western",
+      "file": "Happy_Mood_Always/Carmen Twillie, Lebo M. - Circle of Life (From _The Lion King_).mp4",
+      "cover": "Web_Images/backpack.jpg",
+      "length": "4:30"
+   }
+]
