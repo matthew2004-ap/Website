@@ -36,15 +36,12 @@ body,
 }
 
 .Body {
-   background-color: #222831;
-   background-image:
-      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80'),
-      url('https://images.unsplash.com/photo-1465101178521-c1a9136a3b41?auto=format&fit=crop&w=1500&q=80');
-   /* First image is the main, second is the overlay */
-   background-repeat: no-repeat, no-repeat;
-   background-position: 0 0, right bottom;
-   background-attachment: fixed, fixed;
-   background-size: cover, 400px 400px;
+   /* Replace photographic backgrounds with a vibrant music-friendly gradient */
+   background: radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.06), transparent 12%),
+      radial-gradient(circle at 90% 80%, rgba(255, 105, 180, 0.04), transparent 14%),
+      linear-gradient(135deg, #0f172a 0%, #1f2a44 25%, #5b21b6 50%, #d946ef 75%, #f59e0b 100%);
+   background-size: auto, auto, cover;
+   background-attachment: fixed;
    width: 100vw;
    min-height: 100vh;
    margin: 0;
@@ -54,7 +51,9 @@ body,
    flex-direction: column;
    align-items: center;
    justify-content: flex-start;
-   /* animation: bg-move 40s linear infinite; -- animation stopped */
+   /* subtle slow gradient shift for life */
+   background-position: 0% 50%;
+   animation: gradientBG 28s ease-in-out infinite;
 }
 
 .Pictures {
