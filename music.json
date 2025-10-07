@@ -52,5 +52,419 @@
       "file": "Happy_Mood_Always/Carmen Twillie, Lebo M. - Circle of Life (From _The Lion King_).mp4",
       "cover": "Web_Images/backpack.jpg",
       "length": "4:30"
+   },
+   {
+      "id": "gospel-02",
+      "title": "Living Hope",
+      "artist": "Phil Wickham",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/Phil_Wickham_Living_Hope.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:18"
+   },
+   {
+      "id": "gospel-03",
+      "title": "Goodness of God",
+      "artist": "Bethel Music",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/Bethel_Goodness_of_God.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:05"
+   },
+   {
+      "id": "afro-02",
+      "title": "Ojuelegba (Remix)",
+      "artist": "Wizkid",
+      "category": "Afrobeat",
+      "file": "Happy_Mood_Always/Wizkid_Ojuelegba.mp3",
+      "cover": "Web_Images/girl jackets.jpg",
+      "length": "3:50"
+   },
+   {
+      "id": "afro-03",
+      "title": "Essence",
+      "artist": "Wizkid ft. Tems",
+      "category": "Afrobeat",
+      "file": "Happy_Mood_Always/Wizkid_Essence_ft_Tems.mp3",
+      "cover": "Web_Images/girl jackets.jpg",
+      "length": "4:05"
+   },
+   {
+      "id": "pop-02",
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/The_Weeknd_Blinding_Lights.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:22"
+   },
+   {
+      "id": "pop-03",
+      "title": "Levitating",
+      "artist": "Dua Lipa",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/Dua_Lipa_Levitating.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:23"
+   },
+   {
+      "id": "hiphop-02",
+      "title": "SICKO MODE",
+      "artist": "Travis Scott",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/TravisScott_SICKO_MODE.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "5:12"
+   },
+   {
+      "id": "hiphop-03",
+      "title": "HUMBLE.",
+      "artist": "Kendrick Lamar",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Kendrick_HUMBLE.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "2:57"
+   },
+   {
+      "id": "rock-01",
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "category": "Rock",
+      "file": "Happy_Mood_Always/Nirvana_Smells_Like_Teen_Spirit.mp3",
+      "cover": "Web_Images/backpack.jpg",
+      "length": "5:01"
+   },
+   {
+      "id": "rock-02",
+      "title": "Seven Nation Army",
+      "artist": "The White Stripes",
+      "category": "Rock",
+      "file": "Happy_Mood_Always/White_Stripes_Seven_Nation_Army.mp3",
+      "cover": "Web_Images/backpack.jpg",
+      "length": "3:52"
+   },
+   {
+      "id": "jazz-01",
+      "title": "Take Five",
+      "artist": "Dave Brubeck",
+      "category": "Jazz",
+      "file": "Happy_Mood_Always/Dave_Brubeck_Take_Five.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "5:24"
+   },
+   {
+      "id": "rnb-01",
+      "title": "Earned It",
+      "artist": "The Weeknd",
+      "category": "R&B",
+      "file": "Happy_Mood_Always/TheWeeknd_Earned_It.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:37"
+   },
+   {
+      "id": "country-01",
+      "title": "Take Me Home, Country Roads",
+      "artist": "John Denver",
+      "category": "Country",
+      "file": "Happy_Mood_Always/John_Denver_Country_Roads.mp3",
+      "cover": "Web_Images/backpack.jpg",
+      "length": "3:10"
+   },
+   {
+      "id": "electronic-01",
+      "title": "Strobe",
+      "artist": "Deadmau5",
+      "category": "Electronic",
+      "file": "Happy_Mood_Always/Deadmau5_Strobe.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "10:37"
+   },
+   {
+      "id": "punk-02",
+      "title": "Anarchy in the UK",
+      "artist": "Sex Pistols",
+      "category": "Punk",
+      "file": "Happy_Mood_Always/SexPistols_Anarchy_in_the_UK.mp3",
+      "cover": "Web_Images/boy sneaker.jpg",
+      "length": "3:31"
+   },
+   {
+      "id": "gospel-04",
+      "title": "Imole",
+      "artist": "Dunsin Oyekan",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/Dunsin_Imole.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "5:02"
+   },
+   {
+      "id": "afro-04",
+      "title": "Fall",
+      "artist": "Davido",
+      "category": "Afrobeat",
+      "file": "Happy_Mood_Always/Davido_Fall.mp3",
+      "cover": "Web_Images/girl jackets.jpg",
+      "length": "3:45"
+   },
+   {
+      "id": "pop-04",
+      "title": "Peaches",
+      "artist": "Justin Bieber",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/JustinBieber_Peaches.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:18"
+   },
+   {
+      "id": "hiphop-04",
+      "title": "God's Plan",
+      "artist": "Drake",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Drake_Gods_Plan.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "3:18"
+   },
+   {
+      "id": "rock-03",
+      "title": "Hotel California",
+      "artist": "Eagles",
+      "category": "Rock",
+      "file": "Happy_Mood_Always/Eagles_Hotel_California.mp3",
+      "cover": "Web_Images/backpack.jpg",
+      "length": "6:30"
+   },
+   {
+      "id": "electronic-02",
+      "title": "One More Time",
+      "artist": "Daft Punk",
+      "category": "Electronic",
+      "file": "Happy_Mood_Always/DaftPunk_OneMoreTime.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "5:20"
+   },
+   {
+      "id": "jazz-02",
+      "title": "What a Wonderful World",
+      "artist": "Louis Armstrong",
+      "category": "Jazz",
+      "file": "Happy_Mood_Always/LouisArmstrong_Wonderful_World.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "2:18"
+   },
+   {
+      "id": "rnb-02",
+      "title": "Adorn",
+      "artist": "Miguel",
+      "category": "R&B",
+      "file": "Happy_Mood_Always/Miguel_Adorn.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:25"
+   },
+   {
+      "id": "country-02",
+      "title": "Jolene",
+      "artist": "Dolly Parton",
+      "category": "Country",
+      "file": "Happy_Mood_Always/DollyParton_Jolene.mp3",
+      "cover": "Web_Images/backpack.jpg",
+      "length": "2:43"
+   },
+   {
+      "id": "gospel-05",
+      "title": "Holy Forever",
+      "artist": "Bethel Music",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/Bethel_Holy_Forever.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:40"
+   },
+   {
+      "id": "afro-05",
+      "title": "Ye",
+      "artist": "Burna Boy",
+      "category": "Afrobeat",
+      "file": "Happy_Mood_Always/BurnaBoy_Ye.mp3",
+      "cover": "Web_Images/girl jackets.jpg",
+      "length": "3:09"
+   },
+   {
+      "id": "hiphop-us-05",
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Eminem_Lose_Yourself.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "5:26"
+   },
+   {
+      "id": "hiphop-us-06",
+      "title": "N.Y. State of Mind",
+      "artist": "Nas",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Nas_NY_State_of_Mind.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "4:54"
+   },
+   {
+      "id": "hiphop-us-07",
+      "title": "Alright",
+      "artist": "Kendrick Lamar",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Kendrick_Alright.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "3:39"
+   },
+   {
+      "id": "hiphop-us-08",
+      "title": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Biggie_Juicy.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "5:02"
+   },
+   {
+      "id": "hiphop-us-09",
+      "title": "Empire State of Mind",
+      "artist": "Jay-Z ft. Alicia Keys",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/JayZ_Empire_State_of_Mind.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "4:36"
+   },
+   {
+      "id": "hiphop-us-10",
+      "title": "C.R.E.A.M.",
+      "artist": "Wu-Tang Clan",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/WuTang_CREAM.mp3",
+      "cover": "Web_Images/boy sneaker.jpg",
+      "length": "4:12"
+   },
+   {
+      "id": "hiphop-us-11",
+      "title": "California Love",
+      "artist": "2Pac ft. Dr. Dre",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/2Pac_California_Love.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "4:01"
+   },
+   {
+      "id": "hiphop-us-12",
+      "title": "The Message",
+      "artist": "Grandmaster Flash",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/GrandmasterFlash_TheMessage.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "7:10"
+   },
+   {
+      "id": "hiphop-us-13",
+      "title": "Jesus Walks",
+      "artist": "Kanye West",
+      "category": "Hip-Hop",
+      "file": "Happy_Mood_Always/Kanye_Jesus_Walks.mp3",
+      "cover": "Web_Images/boys sneaker.jpg",
+      "length": "3:14"
+   },
+   {
+      "id": "gospel-us-06",
+      "title": "I Smile",
+      "artist": "Kirk Franklin",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/KirkFranklin_ISmile.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:54"
+   },
+   {
+      "id": "gospel-us-07",
+      "title": "Amazing Grace (My Chains Are Gone)",
+      "artist": "Chris Tomlin",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/ChrisTomlin_Amazing_Grace.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:24"
+   },
+   {
+      "id": "gospel-us-08",
+      "title": "Break Every Chain",
+      "artist": "Tasha Cobbs Leonard",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/TashaCobbs_Break_Every_Chain.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "6:12"
+   },
+   {
+      "id": "gospel-us-09",
+      "title": "Total Praise",
+      "artist": "Richard Smallwood",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/RichardSmallwood_Total_Praise.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "6:30"
+   },
+   {
+      "id": "gospel-us-10",
+      "title": "Awesome Wonder",
+      "artist": "Jekalyn Carr",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/JekalynCarr_Awesome_Wonder.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "5:00"
+   },
+   {
+      "id": "gospel-us-11",
+      "title": "My Testimony",
+      "artist": "Travis Greene",
+      "category": "Gospel",
+      "file": "Happy_Mood_Always/TravisGreene_My_Testimony.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "4:45"
+   },
+   {
+      "id": "jb-01",
+      "title": "Sorry",
+      "artist": "Justin Bieber",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/JustinBieber_Sorry.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:20"
+   },
+   {
+      "id": "jb-02",
+      "title": "Baby",
+      "artist": "Justin Bieber ft. Ludacris",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/JustinBieber_Baby_ft_Ludacris.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:36"
+   },
+   {
+      "id": "jb-03",
+      "title": "Yummy",
+      "artist": "Justin Bieber",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/JustinBieber_Yummy.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:30"
+   },
+   {
+      "id": "jb-04",
+      "title": "Peaches",
+      "artist": "Justin Bieber ft. Daniel Caesar & Giveon",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/JustinBieber_Peaches_ft_DanielCaesar_Giveon.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:18"
+   },
+   {
+      "id": "jb-05",
+      "title": "Intentions",
+      "artist": "Justin Bieber ft. Quavo",
+      "category": "Pop",
+      "file": "Happy_Mood_Always/JustinBieber_Intentions_ft_Quavo.mp3",
+      "cover": "Web_Images/headset.jpg",
+      "length": "3:32"
    }
 ]
